@@ -147,7 +147,7 @@ const store = {
         navigator.userAgent.match(/BlackBerry/i) ||
         navigator.userAgent.match(/Windows Phone/i),
 };
-class ClapatWebGL {
+class ApexWebGL {
     constructor(e) {
         (this.scene = new THREE.Scene()),
             (this.vertex = "varying vec2 vUv;void main() {vUv = uv;gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );}"),
@@ -208,7 +208,7 @@ class ClapatWebGL {
         (this.camera.fov = (180 / Math.PI) * 2 * Math.atan(1 / (2 * i))), (this.plane.scale.x = this.camera.aspect), (this.plane.scale.y = 1), this.camera.updateProjectionMatrix();
     }
     addObjects() {
-        let e = jQuery("#clapat-webgl-slider").attr("data-pattern-img"),
+        let e = jQuery("#Apex-webgl-slider").attr("data-pattern-img"),
             t = new THREE.TextureLoader().load(e);
         (t.wrapS = t.wrapT = THREE.RepeatWrapping),
             (this.material = new THREE.ShaderMaterial({
@@ -239,25 +239,25 @@ class ClapatWebGL {
         this.paused || (requestAnimationFrame(this.render.bind(this)), this.renderer.render(this.scene, this.camera));
     }
 }
-class ClapatSlider {
+class ApexSlider {
     constructor(e, t = {}) {
-        if ((this.bindAll(), this.isElement(e))) (this.el = e), (this.el.clapat_slider = this);
+        if ((this.bindAll(), this.isElement(e))) (this.el = e), (this.el.Apex_slider = this);
         else {
             let i = document.querySelectorAll(e);
             for (let e = 0; e < i.length; e++) {
                 let s = i[e];
-                0 == e ? ((this.el = s), (this.el.clapat_slider = this)) : new ClapatSlider(s, t);
+                0 == e ? ((this.el = s), (this.el.Apex_slider = this)) : new ApexSlider(s, t);
             }
         }
         (this.opts = Object.assign(
             {
                 debug: !1,
                 direction: "horizontal",
-                eventTarget: ".clapat-slider",
-                outer: ".clapat-slider",
-                inner: ".clapat-slider-viewport",
-                slides: ".clapat-slide",
-                clones: "clapat-slide-clone",
+                eventTarget: ".Apex-slider",
+                outer: ".Apex-slider",
+                inner: ".Apex-slider-viewport",
+                slides: ".Apex-slide",
+                clones: "Apex-slide-clone",
                 snap: !1,
                 snapwait: { before: 10, after: 80 },
                 autoplay: !1,
@@ -283,12 +283,12 @@ class ClapatSlider {
             (this.elInner = this.el.querySelector(this.opts.inner)),
             (this.elOuter = this.el.querySelector(this.opts.outer)),
             (this.btnNext = this.btnPrev = null),
-            this.isObject(this.opts.navigation) || 1 != this.opts.navigation || ((this.btnNext = this.el.querySelector(".clapat-button-next")), (this.btnPrev = this.el.querySelector(".clapat-button-prev"))),
+            this.isObject(this.opts.navigation) || 1 != this.opts.navigation || ((this.btnNext = this.el.querySelector(".Apex-button-next")), (this.btnPrev = this.el.querySelector(".Apex-button-prev"))),
             this.isObject(this.opts.navigation) && ((this.btnNext = document.querySelector(this.opts.navigation.nextEl)), (this.btnPrev = document.querySelector(this.opts.navigation.prevEl))),
             null != this.btnNext && this.btnNext.addEventListener("click", this.debounce(this.onNext, 50)),
             null != this.btnPrev && this.btnPrev.addEventListener("click", this.debounce(this.onPrev, 50)),
             (this.elPagination = null),
-            this.isObject(this.opts.pagination) || 1 != this.opts.pagination || (this.elPagination = this.el.querySelector(".clapat-pagination")),
+            this.isObject(this.opts.pagination) || 1 != this.opts.pagination || (this.elPagination = this.el.querySelector(".Apex-pagination")),
             this.isObject(this.opts.pagination) && (this.elPagination = this.el.querySelector(this.opts.navigation.el)),
             (this.vh = store.wh),
             (this.vw = store.ww),
@@ -329,7 +329,7 @@ class ClapatSlider {
             (this.snapWheelEvents = { tsSnap: null, events: [] }),
             (this.gl_canvas = null),
             this.init(),
-            ClapatSlider.instances.push(this);
+            ApexSlider.instances.push(this);
     }
     bindAll() {
         ["onDown", "onMove", "onUp", "onClick", "onWheel", "onResize", "onPagination", "onPrev", "onNext", "updateUI", "updateWheelSnap", "tick"].forEach((e) => (this[e] = this[e].bind(this)));
@@ -388,7 +388,7 @@ class ClapatSlider {
             for (let t = 0; t < e.length; t++) {
                 e[t];
                 let i = document.createElement("div");
-                i.classList.add("clapat-pagination-bullet"),
+                i.classList.add("Apex-pagination-bullet"),
                     "function" == typeof this.opts.renderBullet && (i.innerHTML = this.opts.renderBullet()),
                     this.elPagination.appendChild(i),
                     i.addEventListener("click", this.onPagination),
@@ -509,26 +509,26 @@ class ClapatSlider {
             let d = o.start + h - (t + (e - o.length) / 2);
             if (
                 (Math.abs(d) < o.length / 2
-                    ? (o.el.classList.add("clapat-slide-active"),
-                        o.nextElement.el.classList.add("clapat-slide-next"),
-                        o.nextElement.nextElement.el.classList.add("clapat-slide-next-two"),
-                        o.nextElement.nextElement.nextElement.el.classList.add("clapat-slide-next-three"),
-                        o.prevElement.el.classList.add("clapat-slide-prev"),
-                        o.prevElement.prevElement.el.classList.add("clapat-slide-prev-two"),
-                        o.prevElement.prevElement.prevElement.el.classList.add("clapat-slide-prev-three"),
+                    ? (o.el.classList.add("Apex-slide-active"),
+                        o.nextElement.el.classList.add("Apex-slide-next"),
+                        o.nextElement.nextElement.el.classList.add("Apex-slide-next-two"),
+                        o.nextElement.nextElement.nextElement.el.classList.add("Apex-slide-next-three"),
+                        o.prevElement.el.classList.add("Apex-slide-prev"),
+                        o.prevElement.prevElement.el.classList.add("Apex-slide-prev-two"),
+                        o.prevElement.prevElement.prevElement.el.classList.add("Apex-slide-prev-three"),
                         (this.state.currentSlideItem = o),
                         null != a &&
                         a !== this.state.currentSlideItem &&
                         "function" == typeof this.opts.on.activeSlideChanged &&
                         this.opts.on.activeSlideChanged(this.state.currentSlideItem.el, this.state.currentSlideItem.prevElement.el, this.state.currentSlideItem.nextElement.el))
-                    : (o.el.classList.remove("clapat-slide-active"),
-                        o.nextElement.el.classList.remove("clapat-slide-next"),
-                        o.nextElement.nextElement.el.classList.remove("clapat-slide-next-two"),
-                        o.nextElement.nextElement.nextElement.el.classList.remove("clapat-slide-next-three"),
-                        o.prevElement.el.classList.remove("clapat-slide-prev"),
-                        o.prevElement.prevElement.el.classList.remove("clapat-slide-prev-two"),
-                        o.prevElement.prevElement.prevElement.el.classList.remove("clapat-slide-prev-three")),
-                    o.end + h > t && o.start + h < e + t ? o.el.classList.add("clapat-slide-visible") : o.el.classList.remove("clapat-slide-visible"),
+                    : (o.el.classList.remove("Apex-slide-active"),
+                        o.nextElement.el.classList.remove("Apex-slide-next"),
+                        o.nextElement.nextElement.el.classList.remove("Apex-slide-next-two"),
+                        o.nextElement.nextElement.nextElement.el.classList.remove("Apex-slide-next-three"),
+                        o.prevElement.el.classList.remove("Apex-slide-prev"),
+                        o.prevElement.prevElement.el.classList.remove("Apex-slide-prev-two"),
+                        o.prevElement.prevElement.prevElement.el.classList.remove("Apex-slide-prev-three")),
+                    o.end + h > t && o.start + h < e + t ? o.el.classList.add("Apex-slide-visible") : o.el.classList.remove("Apex-slide-visible"),
                     o.translate != h)
             ) {
                 let e = this.isItemInsideView(i, o);
@@ -540,7 +540,7 @@ class ClapatSlider {
                 n && !l && "function" == typeof this.opts.on.slideLeave && this.opts.on.slideLeave(o.el), !n && l && "function" == typeof this.opts.on.slideEnter && this.opts.on.slideEnter(o.el);
             }
         }
-        this.state.flags.dragging ? this.el.classList.add("clapat-state-dragging") : this.el.classList.remove("clapat-state-dragging"), this.updatePaginationUI(), null == a && "function" == typeof this.opts.on.init && this.opts.on.init();
+        this.state.flags.dragging ? this.el.classList.add("Apex-state-dragging") : this.el.classList.remove("Apex-state-dragging"), this.updatePaginationUI(), null == a && "function" == typeof this.opts.on.init && this.opts.on.init();
     }
     updatePaginationUI() {
         if (this.opts.pagination && !(this.itemsPagination.length <= 0) && null != this.state.currentSlideItem) {
@@ -555,18 +555,18 @@ class ClapatSlider {
                 }
             }
             let i = this.itemsPagination[t];
-            null != i && i.el.classList.add("clapat-pagination-bullet-active");
+            null != i && i.el.classList.add("Apex-pagination-bullet-active");
             let s = t - 1;
             s < 0 && (s = this.itemsPagination.length - 1);
             let n = this.itemsPagination[s];
-            null != n && n.el.classList.add("clapat-pagination-bullet-prev");
+            null != n && n.el.classList.add("Apex-pagination-bullet-prev");
             let l = t + 1;
             l >= this.itemsPagination.length && (l = 0);
             let a = this.itemsPagination[l];
-            null != a && a.el.classList.add("clapat-pagination-bullet-next");
+            null != a && a.el.classList.add("Apex-pagination-bullet-next");
             for (let e = 0; e < this.itemsPagination.length; e++) {
                 let i = this.itemsPagination[e];
-                e != t && i.el.classList.remove("clapat-pagination-bullet-active"), e != l && i.el.classList.remove("clapat-pagination-bullet-next"), e != s && i.el.classList.remove("clapat-pagination-bullet-prev");
+                e != t && i.el.classList.remove("Apex-pagination-bullet-active"), e != l && i.el.classList.remove("Apex-pagination-bullet-next"), e != s && i.el.classList.remove("Apex-pagination-bullet-prev");
             }
         }
     }
@@ -921,7 +921,7 @@ class ClapatSlider {
                 "horizontal" == this.opts.webgl_direction
                     ? "\n\t\t\t\t// Horizontal Effect\n\t\t\t\tvec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);\n\t\t\t\tvec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);\n\t\t\t"
                     : "\n\t\t\t\t// Vertical Effect\t\t\t\n\t\t\t\tvec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));\n\t\t\t\tvec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));\n\t\t\t")}\n\t\t\t\t\n\t\t\t\tvec4 _currentImage = texture2D(currentImage, distortedPosition);\n\t\t\t\tvec4 _nextImage = texture2D(nextImage, distortedPosition2);\n\t\t\t\tvec4 finalTexture = mix(_currentImage, _nextImage, dispFactor);\n\n\t\t\t\tgl_FragColor = finalTexture; }\n\n\t\t\t`;
-        (this.gl_canvas = new ClapatWebGL({ vertex: "varying vec2 vUv; void main() {  vUv = uv;  gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\t}", fragment: t })), (this.gl_canvas.isRunning = !1);
+        (this.gl_canvas = new ApexWebGL({ vertex: "varying vec2 vUv; void main() {  vUv = uv;  gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\t}", fragment: t })), (this.gl_canvas.isRunning = !1);
         let i = this,
             s = this.gl_canvas,
             n = function (e) {
@@ -1025,7 +1025,7 @@ class ClapatSlider {
         1 == this.opts.debug && console.log(e);
     }
 }
-ClapatSlider.instances = [];
+ApexSlider.instances = [];
 class GridItem {
     constructor(e, t) {
         (this.DOM = { el: null, imageWrap: null, imageCaption: null, image: null, imageInner: null }),
@@ -1036,7 +1036,7 @@ class GridItem {
             null != this.DOM.image && (this.DOM.imageInner = this.DOM.image.querySelector(e.opts.selImageInner));
     }
 }
-class ClapatGridPreview {
+class ApexGridPreview {
     constructor(e, t = {}) {
         if (((this.slider = e), !this.slider)) return;
         (this.opts = Object.assign(
@@ -1276,30 +1276,30 @@ class ClapatGridPreview {
             n.classList.add("current-image-preview"), null != p && l.replaceChild(n, p), a.appendChild(p), p.classList.add("current-image-preview");
             const t = p.dataset.projectbgcolor;
             gsap.to("main, .header-gradient", { duration: 0.5, delay: 0.15, backgroundColor: t, ease: Power2.easeInOut }),
-                document.getElementById("clapat-page-content").classList.contains("light-content")
+                document.getElementById("Apex-page-content").classList.contains("light-content")
                     ? p.classList.contains("change-header")
-                        ? (gsap.to("#clapat-logo img.black-logo", { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut }),
-                            gsap.to("#clapat-logo img.white-logo", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut }),
+                        ? (gsap.to("#Apex-logo img.black-logo", { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut }),
+                            gsap.to("#Apex-logo img.white-logo", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut }),
                             gsap.to(".classic-menu .flexnav li", { duration: 0.5, delay: 0.15, color: "#000", ease: Power2.easeInOut }),
                             gsap.to("header .button-wrap.menu", { duration: 0.5, delay: 0.15, color: "#000", ease: Power2.easeInOut }),
                             gsap.to("header .button-icon-link", { duration: 0.5, delay: 0.15, color: "#000", boxShadow: "inset 0 0 15px rgba(0,0,0,0.3)", ease: Power2.easeInOut }),
                             gsap.to(".button-icon-link.cp-button-prev, .button-icon-link.cp-button-next", { duration: 0.5, delay: 0.15, color: "#000", ease: Power2.easeInOut }))
-                        : (gsap.to("#clapat-logo img.black-logo", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut }),
-                            gsap.to("#clapat-logo img.white-logo", { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut }),
+                        : (gsap.to("#Apex-logo img.black-logo", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut }),
+                            gsap.to("#Apex-logo img.white-logo", { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut }),
                             gsap.to(".classic-menu .flexnav li", { duration: 0.5, delay: 0.15, color: "#fff", ease: Power2.easeInOut }),
                             gsap.to("header .button-wrap.menu", { duration: 0.5, delay: 0.15, color: "#fff", ease: Power2.easeInOut }),
                             gsap.to("header .button-icon-link", { duration: 0.5, delay: 0.15, color: "#fff", boxShadow: "inset 0 0 15px rgba(255,255,255,0.3)", ease: Power2.easeInOut }),
                             gsap.to(".button-icon-link.cp-button-prev, .button-icon-link.cp-button-next", { duration: 0.5, delay: 0.15, color: "#fff", ease: Power2.easeInOut }))
-                    : document.getElementById("clapat-page-content").classList.contains("dark-content") &&
+                    : document.getElementById("Apex-page-content").classList.contains("dark-content") &&
                     (p.classList.contains("change-header")
-                        ? (gsap.to("#clapat-logo img.black-logo", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut }),
-                            gsap.to("#clapat-logo img.white-logo", { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut }),
+                        ? (gsap.to("#Apex-logo img.black-logo", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut }),
+                            gsap.to("#Apex-logo img.white-logo", { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut }),
                             gsap.to(".classic-menu .flexnav li", { duration: 0.5, delay: 0.15, color: "#fff", ease: Power2.easeInOut }),
                             gsap.to("header .button-wrap.menu", { duration: 0.5, delay: 0.15, color: "#fff", ease: Power2.easeInOut }),
                             gsap.to("header .button-icon-link", { duration: 0.5, delay: 0.15, color: "#fff", boxShadow: "inset 0 0 15px rgba(255,255,255,0.3)", ease: Power2.easeInOut }),
                             gsap.to(".button-icon-link.cp-button-prev, .button-icon-link.cp-button-next", { duration: 0.5, delay: 0.15, color: "#fff", ease: Power2.easeInOut }))
-                        : (gsap.to("#clapat-logo img.black-logo", { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut }),
-                            gsap.to("#clapat-logo img.white-logo", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut }),
+                        : (gsap.to("#Apex-logo img.black-logo", { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut }),
+                            gsap.to("#Apex-logo img.white-logo", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut }),
                             gsap.to(".classic-menu .flexnav li", { duration: 0.5, delay: 0.15, color: "#000", ease: Power2.easeInOut }),
                             gsap.to("header .button-wrap.menu", { duration: 0.5, delay: 0.15, color: "#000", ease: Power2.easeInOut }),
                             gsap.to("header .button-icon-link", { duration: 0.5, delay: 0.15, color: "#000", boxShadow: "inset 0 0 15px rgba(0,0,0,0.3)", ease: Power2.easeInOut }),

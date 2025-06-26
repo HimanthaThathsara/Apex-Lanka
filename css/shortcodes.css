@@ -261,41 +261,41 @@
 	Carousel
 ---------------------------------------------------*/
 	
-	.clapat-slider-wrapper.content-slider  {
+	.Apex-slider-wrapper.content-slider  {
 		width:100%;
 		height: auto;
 		position:relative;	
 	}
 	
-	.content-slider .clapat-slider-viewport {
+	.content-slider .Apex-slider-viewport {
 		display: flex;
 		position: relative;
 		margin: 0 auto;
 	}
 	
-	.content-slider.looped-carousel .clapat-slider-viewport {
+	.content-slider.looped-carousel .Apex-slider-viewport {
 		max-width:1280px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slider-viewport {
+	.content-slider.small-looped-carousel .Apex-slider-viewport {
 		max-width:600px;
 	}
 	
-	.content-slider .clapat-slider {
+	.content-slider .Apex-slider {
 		padding: 0 0 0 0;
 		height: auto;
 		position:relative;	
 	}
 	
-	.content-slider .clapat-slide {
+	.content-slider .Apex-slide {
 		width: 100%;
 	}
 	
-	.content-slider.looped-carousel .clapat-slide {
+	.content-slider.looped-carousel .Apex-slide {
 		padding:0 60px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slide {
+	.content-slider.small-looped-carousel .Apex-slide {
 		padding:0 20px;
 	}
 	
@@ -308,23 +308,23 @@
 		border-radius:8px;
 	}
 	
-	.content-slider.looped-carousel .clapat-button-prev, .content-slider.looped-carousel .clapat-button-next {
+	.content-slider.looped-carousel .Apex-button-prev, .content-slider.looped-carousel .Apex-button-next {
 		display:none;
 	}
 	
-	.disable-cursor .content-slider.looped-carousel .clapat-button-prev, .disable-cursor .content-slider.looped-carousel .clapat-button-next {
+	.disable-cursor .content-slider.looped-carousel .Apex-button-prev, .disable-cursor .content-slider.looped-carousel .Apex-button-next {
 		display:block;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-button-prev, .content-slider.small-looped-carousel .clapat-button-next {
+	.content-slider.small-looped-carousel .Apex-button-prev, .content-slider.small-looped-carousel .Apex-button-next {
 		display:none;
 	}
 	
-	.disable-cursor .content-slider.small-looped-carousel .clapat-button-prev, .disable-cursor .content-slider.small-looped-carousel .clapat-button-next {
+	.disable-cursor .content-slider.small-looped-carousel .Apex-button-prev, .disable-cursor .content-slider.small-looped-carousel .Apex-button-next {
 		display:block;
 	}
 	
-	.content-slider .clapat-pagination {
+	.content-slider .Apex-pagination {
 		bottom:20px;
 	}
 	
@@ -350,11 +350,11 @@
 		cursor:pointer;		
 	}
 	
-	.content-slider .clapat-pagination {
+	.content-slider .Apex-pagination {
 		opacity:1;
 	}
 	
-	.content-slider .clapat-pagination-bullet .parallax-wrap {
+	.content-slider .Apex-pagination-bullet .parallax-wrap {
 		width: 40px;
 		height: 40px;
 		display: inline-flex;
@@ -364,14 +364,14 @@
 		pointer-events: initial;
 	}
 	
-	.content-slider .clapat-pagination-bullet .parallax-element {
+	.content-slider .Apex-pagination-bullet .parallax-element {
 		height: 40px;
 		width: 40px;
 		text-align: center;
 		line-height: 50px;
 	}
 	
-	.clapat-pagination-bullet-active .path {
+	.Apex-pagination-bullet-active .path {
 		display: inline-block !important;
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 0;
@@ -379,51 +379,51 @@
 		animation-iteration-count: unset;
 	}
 	
-	.dark-cursor .clapat-pagination {
+	.dark-cursor .Apex-pagination {
 		color:#000;
 	}
 	
-	.light-cursor .clapat-pagination {
+	.light-cursor .Apex-pagination {
 		color:#fff;
 	}
 	
-	.clapat-pagination-bullet .path, .light-content.light-content-slider .clapat-pagination-bullet .path {
+	.Apex-pagination-bullet .path, .light-content.light-content-slider .Apex-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-content .clapat-pagination-bullet .path, .dark-section .clapat-pagination-bullet .path, .light-content-slider .clapat-pagination-bullet .path {
+	.light-content .Apex-pagination-bullet .path, .dark-section .Apex-pagination-bullet .path, .light-content-slider .Apex-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-content .light-section .clapat-pagination-bullet .path {
+	.light-content .light-section .Apex-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.clapat-pagination-bullet .solid-fill, .light-content.light-content-slider .clapat-pagination-bullet .solid-fill {
+	.Apex-pagination-bullet .solid-fill, .light-content.light-content-slider .Apex-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
-	.light-content .clapat-pagination-bullet .solid-fill, .dark-section .clapat-pagination-bullet .solid-fill, .light-content-slider .clapat-pagination-bullet .solid-fill {
+	.light-content .Apex-pagination-bullet .solid-fill, .dark-section .Apex-pagination-bullet .solid-fill, .light-content-slider .Apex-pagination-bullet .solid-fill {
 		 fill:currentColor;
 	}
 	 
-	 .light-content .light-section .clapat-pagination-bullet .solid-fill, .light-content .dark-section .dark-cursor .clapat-pagination-bullet .solid-fill {
+	 .light-content .light-section .Apex-pagination-bullet .solid-fill, .light-content .dark-section .dark-cursor .Apex-pagination-bullet .solid-fill {
 		 fill:currentColor;
 	}
 	 
-	.light-cursor .clapat-pagination-bullet .path {
+	.light-cursor .Apex-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.dark-cursor .clapat-pagination-bullet .path {
+	.dark-cursor .Apex-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-cursor .clapat-pagination-bullet .solid-fill {
+	.light-cursor .Apex-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
-	.dark-cursor .clapat-pagination-bullet .solid-fill {
+	.dark-cursor .Apex-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
@@ -441,7 +441,7 @@
 	  }
 	}
 	
-	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
+	.disable-cursor .full .looped-carousel .Apex-controls, .disable-cursor .full_elementor .looped-carousel .Apex-controls {
 		position: absolute;
 		width: calc(100% - 60px);
 		height: 100%;
@@ -451,7 +451,7 @@
 		margin: 0 auto;
 	}
 	
-	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
+	.disable-cursor .full .small-looped-carousel .Apex-controls, .disable-cursor .full_elementor .small-looped-carousel .Apex-controls {
 		position: absolute;
 		width: calc(100% - 60px);
 		max-width:540px;
@@ -607,7 +607,7 @@
 		opacity:1;		
 	}
 	
-	.item .hero-video-wrapper, .clapat-item .hero-video-wrapper, .hover-reveal__img .hero-video-wrapper, .clapat-slider .hero-video-wrapper, .open-thumbnail .hero-video-wrapper, .slider-zoom-wrapper .hero-video-wrapper, .overlapping-image .hero-video-wrapper, .section-image .hero-video-wrapper {
+	.item .hero-video-wrapper, .Apex-item .hero-video-wrapper, .hover-reveal__img .hero-video-wrapper, .Apex-slider .hero-video-wrapper, .open-thumbnail .hero-video-wrapper, .slider-zoom-wrapper .hero-video-wrapper, .overlapping-image .hero-video-wrapper, .section-image .hero-video-wrapper {
 		position: absolute;
 		box-sizing: border-box;
 		min-width: 100%;
@@ -897,7 +897,7 @@
 		color:#fff;
 	}
 	
-	.clapat-button-wrap {
+	.Apex-button-wrap {
 		display: flex;
 		position: relative;
 		justify-content: center;
@@ -909,24 +909,24 @@
 		color:#000;		
 	}
 	
-	.light-content .clapat-button-wrap, .dark-section .clapat-button-wrap {
+	.light-content .Apex-button-wrap, .dark-section .Apex-button-wrap {
 		color:#fff;	
 	}
 	
-	.light-content .light-section .clapat-button-wrap {
+	.light-content .light-section .Apex-button-wrap {
 		color:#000;	
 	}
 	
-	.clapat-button-wrap.circle {
+	.Apex-button-wrap.circle {
 		min-width:104px;
 		height:104px;	
 	}
 	
-	.text-align-center .clapat-button-wrap {
+	.text-align-center .Apex-button-wrap {
 		margin:0 auto;
 	}
 	
-	.clapat-button {		
+	.Apex-button {		
 		opacity:1;		
 	}
 	
@@ -1007,20 +1007,20 @@
 		background-color:transparent;
 	}
 	
-	.clapat-button a {
+	.Apex-button a {
 		position: relative;
 		display: block;
 		height: 100%;
 	}
 	
-	.button-box.has-animation .clapat-button a {
+	.button-box.has-animation .Apex-button a {
 		opacity:0;
 		white-space: nowrap;	
 		transition: opacity 0.5s ease 0.5s;
 		-webkit-transition: opacity 0.5s ease 0.5s;
 	}
 	
-	.button-box.has-animation .clapat-button .animated a {
+	.button-box.has-animation .Apex-button .animated a {
 		opacity:1;
 	}
 	
@@ -1066,17 +1066,17 @@
 		text-align: center;
 	}
 	
-	.clapat-button:hover .button-border span {
+	.Apex-button:hover .button-border span {
 		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
 		transform-origin: 0% 0%;
 	}
 	
-	.clapat-button-wrap.circle:hover .button-border {
+	.Apex-button-wrap.circle:hover .button-border {
 		border: solid 2px transparent;	
 	}
 	
-	.clapat-button-wrap.circle .button-border input, .clapat-button-wrap.circle .button-border a {
+	.Apex-button-wrap.circle .button-border input, .Apex-button-wrap.circle .button-border a {
 		height: 100px;
 		width: 100px;
 		line-height: 100px;
@@ -3356,16 +3356,16 @@
 		pointer-events:none;
 	}
 	
-	.carousel-shortcode-thumbs .clapat-item {
+	.carousel-shortcode-thumbs .Apex-item {
 		width: calc(20% - 80px);
 		margin:60px 40px;
 	}
 	
-	.carousel-shortcode-thumbs.is_active .clapat-item {
+	.carousel-shortcode-thumbs.is_active .Apex-item {
 		pointer-events:initial;
 	}
 	
-	.carousel-shortcode-thumbs .clapat-item .slide-inner {
+	.carousel-shortcode-thumbs .Apex-item .slide-inner {
 		padding-top: 0;
 		width: 100%;
 		height: auto;
@@ -4104,19 +4104,19 @@
 
 @media only screen and (max-width: 1024px) {
 	
-	.content-slider.looped-carousel .clapat-slide {
+	.content-slider.looped-carousel .Apex-slide {
 		padding:0 40px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slide {
+	.content-slider.small-looped-carousel .Apex-slide {
 		padding:0 40px;
 	}
 	
-	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
+	.disable-cursor .full .looped-carousel .Apex-controls, .disable-cursor .full_elementor .looped-carousel .Apex-controls {
 		width: calc(100% - 80px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
+	.disable-cursor .full .small-looped-carousel .Apex-controls, .disable-cursor .full_elementor .small-looped-carousel .Apex-controls {
 		width: calc(100% - 80px);
 		max-width:520px;
 	}		
@@ -4265,29 +4265,29 @@
 
 @media only screen and (max-width: 767px) {
 	
-	.content-slider.looped-carousel .clapat-slide {
+	.content-slider.looped-carousel .Apex-slide {
 		padding:0 30px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slide {
+	.content-slider.small-looped-carousel .Apex-slide {
 		padding:0 30px;
 	}
 	
-	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
+	.disable-cursor .full .looped-carousel .Apex-controls, .disable-cursor .full_elementor .looped-carousel .Apex-controls {
 		width: calc(100% - 60px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
+	.disable-cursor .full .small-looped-carousel .Apex-controls, .disable-cursor .full_elementor .small-looped-carousel .Apex-controls {
 		width: calc(100% - 60px);
 		max-width:540px;
 	}
 	
-	.content-slider .clapat-pagination-bullet .parallax-wrap {
+	.content-slider .Apex-pagination-bullet .parallax-wrap {
 		width: 20px;
 		height: 20px;
 	}
 	
-	.content-slider .clapat-pagination-bullet .parallax-wrap {
+	.content-slider .Apex-pagination-bullet .parallax-wrap {
 		width: 20px;
 		height: 20px;
 	}
@@ -4582,24 +4582,24 @@
 		padding-left:0px;
 	}
 	
-	.content-slider.looped-carousel .clapat-slide {
+	.content-slider.looped-carousel .Apex-slide {
 		padding:0 20px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slide {
+	.content-slider.small-looped-carousel .Apex-slide {
 		padding:0 20px;
 	}
 	
-	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
+	.disable-cursor .full .looped-carousel .Apex-controls, .disable-cursor .full_elementor .looped-carousel .Apex-controls {
 		width: calc(100% - 40px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
+	.disable-cursor .full .small-looped-carousel .Apex-controls, .disable-cursor .full_elementor .small-looped-carousel .Apex-controls {
 		width: calc(100% - 40px);
 		max-width:560px;
 	}		
 			
-	.clapat-button {
+	.Apex-button {
     	margin-bottom: 20px;
 	}
 	

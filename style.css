@@ -1406,7 +1406,7 @@
       }
 	}
 	
-	.show-loader a, .show-loader .clapat-nav-wrapper, .scale-up a, .scale-up .hide-ball, scale-up .link, .scale-up .button-wrap, .scale-up #burger-wrapper, .scale-up .disable-drag, .scale-drag a, .scale-drag .move-title {
+	.show-loader a, .show-loader .Apex-nav-wrapper, .scale-up a, .scale-up .hide-ball, scale-up .link, .scale-up .button-wrap, .scale-up #burger-wrapper, .scale-up .disable-drag, .scale-drag a, .scale-drag .move-title {
 		pointer-events:none!important;
 	}
 	
@@ -1640,7 +1640,7 @@
 ---------------------------------------------------*/	
 	
 		
-	.clapat-header {
+	.Apex-header {
 		width:100%;
 		height:120px;
 		left:0;
@@ -1683,24 +1683,24 @@
 		color:#fff;
 	}
 	
-	#clapat-logo {
+	#Apex-logo {
 		position: relative;
 		display: block;
 		pointer-events: initial;
 		z-index: 10;
 	}
 	
-	#clapat-logo a {
+	#Apex-logo a {
 		display:block;
 		-webkit-transition: transform 0.5s ease-in-out 0.1s;
 		transition: transform 0.5s ease-in-out 0.1s;	
 	}
 	
-	#clapat-logo a.disable, .open #clapat-logo a {
+	#Apex-logo a.disable, .open #Apex-logo a {
 		pointer-events: none;
 	}
 	
-	#clapat-logo img {
+	#Apex-logo img {
 		display: block;
 		height: 50px;
 		width: auto;
@@ -1708,79 +1708,79 @@
 		
 	}
 	
-	#clapat-page-content:not(.no-css-animation) #clapat-logo img {
+	#Apex-page-content:not(.no-css-animation) #Apex-logo img {
 		/*-webkit-transition: opacity 0.15s ease-in-out 0s;
 		transition: opacity 0.15s ease-in-out 0s;*/
 	}
 	
-	#clapat-logo img.black-logo {
+	#Apex-logo img.black-logo {
 		opacity:1;
 	}
 	
-	.light-content #clapat-logo img.black-logo {
+	.light-content #Apex-logo img.black-logo {
 		opacity:0;
 	}
 	
-	#clapat-logo img.white-logo {
+	#Apex-logo img.white-logo {
 		position:absolute;
 		top:0;
 		left:0;
 		opacity:0;
 	}
 	
-	.light-content #clapat-logo img.white-logo {
+	.light-content #Apex-logo img.white-logo {
 		opacity:1;
 	}
 	
-	.white-header #clapat-logo img.black-logo {
+	.white-header #Apex-logo img.black-logo {
 		opacity:0;
 	}
 	
-	.light-content .white-header #clapat-logo img.black-logo {
+	.light-content .white-header #Apex-logo img.black-logo {
 		opacity:1;
 	}
 	
-	.light-content .white-header.over-white-section #clapat-logo img.black-logo, .show-loader1 .light-content .white-header #clapat-logo img.black-logo {
+	.light-content .white-header.over-white-section #Apex-logo img.black-logo, .show-loader1 .light-content .white-header #Apex-logo img.black-logo {
 		opacity:0;
 	}
 	
-	.white-header #clapat-logo img.white-logo {
+	.white-header #Apex-logo img.white-logo {
 		opacity:1;
 	}
 	
-	.light-content .white-header #clapat-logo img.white-logo {
+	.light-content .white-header #Apex-logo img.white-logo {
 		opacity:0;
 	}
 	
-	.light-content .white-header.over-white-section #clapat-logo img.white-logo, .show-loader1 .light-content .white-header #clapat-logo img.white-logo {
+	.light-content .white-header.over-white-section #Apex-logo img.white-logo, .show-loader1 .light-content .white-header #Apex-logo img.white-logo {
 		opacity:1;
 	}
 	
-	.menu-open.light-content .slide-in #clapat-logo img.white-logo {
+	.menu-open.light-content .slide-in #Apex-logo img.white-logo {
 		opacity:1;
 	}
 	
-	.clapat-nav-wrapper {
+	.Apex-nav-wrapper {
 		pointer-events: none;
 	}
 	
-	.clapat-nav-wrapper.open {
+	.Apex-nav-wrapper.open {
 		pointer-events: initial;
 	}
 	
-	.dark-content-header #clapat-logo img.black-logo {
+	.dark-content-header #Apex-logo img.black-logo {
 		opacity:1!important;		
 	}
 	
-	.dark-content-header #clapat-logo img.white-logo {
+	.dark-content-header #Apex-logo img.white-logo {
 		opacity:0!important;		
 	}
 	
-	.light-content-header #clapat-logo img.black-logo {
+	.light-content-header #Apex-logo img.black-logo {
 		opacity:0!important;		
 	}
 	
-	.light-content-header #clapat-logo img.white-logo {
+	.light-content-header #Apex-logo img.white-logo {
 		opacity:1!important;		
 	}
 	
@@ -1793,7 +1793,7 @@
 			color:#000;
 		}
 		
-		.classic-menu .clapat-nav-wrapper {
+		.classic-menu .Apex-nav-wrapper {
 			position: relative;
 			width: auto;
 			top: 0px;
@@ -1806,7 +1806,7 @@
 			opacity: 1 !important;
 		}
 		
-		.clapat-header.classic-menu .clapat-nav-wrapper {
+		.Apex-header.classic-menu .Apex-nav-wrapper {
 			position: absolute;
 			display: flex;
 			align-items: center;
@@ -1908,27 +1908,27 @@
 		}
 		
 		
-		.clapat-header.classic-menu .flexnav li a .before-span span {
+		.Apex-header.classic-menu .flexnav li a .before-span span {
 			padding:3px 10px;
 			border-radius:3px;
 		}
 		
-		.clapat-header.classic-menu .flexnav li a.active .before-span span {
+		.Apex-header.classic-menu .flexnav li a.active .before-span span {
 			-webkit-transform: translateY(-100%);
 			transform: translateY(-100%);
 		}
 		
-		.load-next-page .clapat-header.classic-menu .flexnav li a.active .before-span span {
+		.load-next-page .Apex-header.classic-menu .flexnav li a.active .before-span span {
 			-webkit-transform: translateY(0);
 			transform: translateY(0);
 		}
 		
-		.clapat-header.classic-menu .flexnav li.disable a.active .before-span span {
+		.Apex-header.classic-menu .flexnav li.disable a.active .before-span span {
 			-webkit-transform: translateY(0);
 			transform: translateY(0);
 		}
 		
-		.clapat-header.classic-menu .flexnav li.item-with-ul.disable:hover a.active .before-span span {
+		.Apex-header.classic-menu .flexnav li.item-with-ul.disable:hover a.active .before-span span {
 			-webkit-transform: translateY(-100%);
 			transform: translateY(-100%);
 		}
@@ -2133,7 +2133,7 @@
 		
 		/*-- Full Screen Menu --*/	
 		
-		.fullscreen-menu .clapat-nav-wrapper {
+		.fullscreen-menu .Apex-nav-wrapper {
 			height: 100vh;
 			position: fixed;
 			top:0;
@@ -2146,7 +2146,7 @@
 			padding:20px 0;
 		}
 		
-		.fullscreen-menu .clapat-nav-wrapper.open {
+		.fullscreen-menu .Apex-nav-wrapper.open {
 			visibility:visible;
 			pointer-events:initial;
 		}
@@ -2314,7 +2314,7 @@
 	
 	}
 
-	.clapat-nav-wrapper, .clapat-nav-wrapper.open {
+	.Apex-nav-wrapper, .Apex-nav-wrapper.open {
 		background:transparent;
 	}
 
@@ -2638,7 +2638,7 @@
 	05. Main Content
 ---------------------------------------------------*/		
 	
-	.show-loader #clapat-page-content {
+	.show-loader #Apex-page-content {
 		pointer-events: none !important;
 	}
 	
@@ -2674,7 +2674,7 @@
 	06. Footer Elements
 ---------------------------------------------------*/		
 	
-	.clapat-footer {
+	.Apex-footer {
 		position:relative;
 		width:100%;
 		height:120px;
@@ -2687,11 +2687,11 @@
 		pointer-events:none;
 	}
 	
-	.clapat-footer.fixed {
+	.Apex-footer.fixed {
 		position:fixed;
 	}
 	
-	.clapat-footer.showcase-footer{
+	.Apex-footer.showcase-footer{
 		position:fixed;
 	}
 	
@@ -2753,7 +2753,7 @@
 		color: #fff;
 	}
 	
-	.clapat-footer .socials-wrap {
+	.Apex-footer .socials-wrap {
 		margin-top:0px;
 	}
 	
@@ -3250,7 +3250,7 @@
 		color:#000;
 	}
 	
-	.clapat-footer .link-text {
+	.Apex-footer .link-text {
 		float:left;
 		opacity:0;
 		margin-top: 25px;
@@ -3345,7 +3345,7 @@
 		bottom:14px;
 	}
 	
-	.clapat-nav-wrapper, .clapat-nav-wrapper.open {
+	.Apex-nav-wrapper, .Apex-nav-wrapper.open {
 		background:transparent;
 	}
 	
@@ -3377,7 +3377,7 @@
   		bottom: 40px;
 	}
 	
-	.clapat-header {
+	.Apex-header {
     	height: 100px;
 	}
 	
@@ -3386,12 +3386,12 @@
 	}
 	
 	@media (min-width: 1025px) {
-	  .clapat-header.classic-menu .clapat-nav-wrapper {
+	  .Apex-header.classic-menu .Apex-nav-wrapper {
 		top: 17px;
 	  }
 	}
 	
-	.clapat-footer {
+	.Apex-footer {
     	height: 100px;
 	}
 	
@@ -3472,7 +3472,7 @@
 		padding: 10px 40px;
 	}
 	
-	.clapat-nav-wrapper {
+	.Apex-nav-wrapper {
 		height: 100vh;
 		height: 100dvh;
 		width: 100%;
@@ -3486,7 +3486,7 @@
 		padding:20px 0;	
 	}
 	
-	.clapat-nav-wrapper.open {
+	.Apex-nav-wrapper.open {
 		visibility:visible;
 		pointer-events:initial;
 	}
@@ -3855,7 +3855,7 @@
   		bottom: 30px;
 	}
 	
-	.clapat-header {
+	.Apex-header {
 		height:80px;
 	}
 	
@@ -3868,13 +3868,13 @@
 		display:none;
 	}
 	
-	.clapat-header .button-text {
+	.Apex-header .button-text {
     	display: block!important;
 		opacity:0;
 		pointer-events:none;
   	}
 	
-	#clapat-logo {
+	#Apex-logo {
 		left: 30px;
 	}
 	
@@ -3886,7 +3886,7 @@
 		right: 0px;
 	}
 	
-	.clapat-header .button-text {
+	.Apex-header .button-text {
 		display: none;
 	}
 	
@@ -3908,7 +3908,7 @@
 		display: block;
 	}
 	
-	.clapat-footer {
+	.Apex-footer {
 		height: 80px;
 	}
 	
@@ -3973,7 +3973,7 @@
 		line-height: 20px;
 	}
 	
-	.clapat-footer.showcase-footer .arrows-wrap {
+	.Apex-footer.showcase-footer .arrows-wrap {
 		right: auto;
 		left: -30px;
 		float: left;
@@ -4065,7 +4065,7 @@
   		padding: 0 20px;
 	}
 	
-	#clapat-logo {
+	#Apex-logo {
 		left: 20px;
 	}
 	
@@ -4082,7 +4082,7 @@
 		margin:0;
 	}
 	
-	.clapat-footer.showcase-footer #footer-container {
+	.Apex-footer.showcase-footer #footer-container {
 		padding: 0px 20px;
 	}
 	
@@ -4095,30 +4095,30 @@
     	width: 40px;
 	}
 	
-	.clapat-footer.showcase-footer .arrows-wrap {
+	.Apex-footer.showcase-footer .arrows-wrap {
 		right: 0;
 		left: 0;
 		float: none;
 		margin: auto;
 	}
 	
-	.clapat-footer.showcase-footer .arrows-wrap {
+	.Apex-footer.showcase-footer .arrows-wrap {
 		width: 100%;
 	}
 	
-	.clapat-footer.showcase-footer .prev-wrap, .clapat-footer.showcase-footer .next-wrap {
+	.Apex-footer.showcase-footer .prev-wrap, .Apex-footer.showcase-footer .next-wrap {
     	width: 60px;
 	}
 	
-	.clapat-footer.showcase-footer .footer-middle {
+	.Apex-footer.showcase-footer .footer-middle {
 		top: 0px;
 	}
 	
-	.clapat-footer.showcase-footer .showcase-subtitles-wrap {
+	.Apex-footer.showcase-footer .showcase-subtitles-wrap {
 		left: 0;
 	}
 	
-	.clapat-footer.showcase-footer .socials-wrap {
+	.Apex-footer.showcase-footer .socials-wrap {
 		display:none;
 	}
 	
