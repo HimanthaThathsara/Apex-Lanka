@@ -19,7 +19,6 @@ jQuery(function ($) {
 		MouseCursor();
 		JustifiedGrid();
 		Lightbox();
-		ContactForm();
 		PlayVideo();
 		ContactMap();
 		ShuffleElementsFunction();
@@ -3029,9 +3028,7 @@ jQuery(function ($) {
 		JustifiedGrid();
 		Lightbox();
 		PlayVideo();
-		ContactForm();
 		ContactMap();
-		CustomFunction();
 		ShuffleElementsFunction();
 		InitShuffleElements();
 

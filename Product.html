@@ -24,7 +24,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
     </head>
 
-    <body class="hidden hidden-ball smooth-scroll rounded-borders hero-below-caption dark-content" data-primary-color="transparent">
+    <body class="hidden hidden-ball smooth-scroll rounded-borders hero-below-caption" data-primary-color="transparent">
 
         <main>
 
@@ -75,7 +75,7 @@
                                             </a>
                                         </li>
                                         <li class="menu-timeline link">
-                                            <a class="ajax-link" data-type="page-transition" href="Product.html">
+                                            <a class="ajax-link active" data-type="page-transition" href="Product.html">
                                                 <div class="before-span">
                                                     <span data-hover="Product">Product</span>
                                                 </div>
@@ -156,22 +156,23 @@
                         <div id="hero-styles">
 
                             <div id="hero-caption" class="content-full-width parallax-scroll-caption text-align-center hero-full-caption">
+
                                 <div class="inner">
                                 
-                                    <h1 class="hero-title caption-timeline" data-infoTextBefore="Reach Out" data-infoTextAfter="Buddy">
-                                    	<div><span>contact</span></div>
+                                    <h1 class="hero-title caption-timeline generate-spans" data-infoTextBefore="Have a" data-infoTextAfter="Move On">
+                                    	<div><span>projects</span></div>
                                     </h1>
                                     
                                     <div class="hero-subtitle caption-timeline onload-shuffle">
-                                    	<div><span>Don't let your idea to wait</span></div> 
-                                        <div><span>Let's bring it to life</span></div>
-                                    </div> 
-                                                                      
+                                        <div><span>Designing digital experiences that</span></div>
+                                        <div><span>make a lasting impression</span></div>
+                                    </div>                                   
                                 </div>
+
                             </div>
 
-
                             <div id="hero-footer" class="has-border">
+
                             	<div class="hero-footer-left">
                                 	<div class="button-wrap left scroll-down">
                                         <div class="icon-wrap parallax-wrap">
@@ -182,15 +183,24 @@
                                         <div class="button-text sticky left"><span data-hover="Scroll to Explore">Scroll to Explore</span></div> 
                                     </div>
                                 </div>
+
                                 <div class="hero-footer-right">
-                                    <!--'TODO: Add the email'-->
-                    				<div id="info-text"><span>office@bennet.com</span></div>
+                    				<div class="button-wrap right show-filters">
+                                        <div class="icon-wrap parallax-wrap">
+                                            <div class="button-icon parallax-element">
+                                                <i class="fa-solid fa-sort"></i>
+                                            </div>
+                                        </div>
+                                        <div class="button-text sticky right"><span data-close="All Projects" data-hover="All Projects">All Projects</span></div> 
+                                    </div>
                                 </div>
+
                             </div>                                  
 
                         </div>
 
                     </div>                      
+                    
                     
                     
                     <!-- Main Content -->
@@ -203,130 +213,131 @@
                             <div id="itemsWrapperLinks">                               
 
                                 <div id="itemsWrapper" class="webgl-fitthumbs fx-one">
-                                
-                                    <!-- Map section -->
-                                    <div class="content-row dark-section" data-bgcolor="#F2F2F2">
                                     
-                                        <div class="clipped-image-wrapper">
-                                        
-                                            <div class="clipped-image-pin">                                    	
-                                                <div class="clipped-image">
-                                                    <!--'TODO: update the map js in contact.js'-->
-                                                    <div id="map_canvas"></div>
-                                                    <div class="clipped-image-gradient"></div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="clipped-image-content">
-                                                <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-                                            </div>
-                                        
-                                        </div>
-                                        
+                                    <div id="filters-gradient">
+
+                                    	<ul id="filters" class="filters-options-wrapper">
+                                            <li class="filters-timeline link"><a id="all" class="filter-option is_active" href="#" data-filter=""><span>all projects</span></a></li>
+                                            <li class="filters-timeline link"><a class="filter-option" href="#" data-filter="design-filter"><span>design</span></a></li>
+                                            <li class="filters-timeline link"><a class="filter-option" href="#" data-filter="video-filter"><span>Develop</span></a></li>
+                                            <li class="filters-timeline link"><a class="filter-option" href="#" data-filter="photo-filter"><span>Maintain</span></a></li>
+                                        </ul>
+
                                     </div>
                                     
                                     
-                                    <!-- Form Section -->
-                                    <div class="content-row row_padding_top row_padding_bottom dark-section text-align-center" data-bgcolor="#F2F2F2">
-                                        
-                                        <h2 class="has-shuffle">Let's Talk</h2>
-                                        
-                                        <hr><hr> 
-                                        
-                                        <!-- Contact Formular -->
-                                        <div id="contact-formular">
-                                        
-                                            <div id="message"></div>
-                                            
-                                            <!--'TODO: manage the form action and other thing in the form'-->
-                                            <form method="post" action="##" name="contactform" id="contactform">                             
-                                                <div class="name-box">        
-                                                    <input name="name" type="text" id="name" size="30" value="" placeholder="What's Your Name"><label class="input_label"></label>
-                                                </div>                                                        
-                                                <div class="email-box">
-                                                    <input name="email" type="text" id="email" size="30" value="" placeholder="Your Email"><label class="input_label"></label>
-                                                </div>                            
-                                                <div class="message-box">
-                                                    <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Tell Us About Your Project" ></textarea><label class="input_label slow"></label>
-                                                </div>
+                                    <!-- Apex Portfolio -->
+                                    <div class="showcase-portfolio expand-grid">
 
-                                                                             
-                                                <div class="button-box has-animation" data-delay="100">             
-                                                    <div class="Apex-button-wrap parallax-wrap hide-ball">
-                                                        <div class="Apex-button parallax-element">
-                                                            <div class="button-border rounded">
-                                                                <input type="submit" class="send_message" id="submit" value="Send Mail" /></div>
-                                                        </div>
-                                                    </div> 
+                                        <!--'TODO: Add the image and caption for each project'-->
+                                        <div class="Apex-item photo-filter">
+                                            <div class="slide-inner trigger-item change-header" data-centerLine="OPEN">                                                    
+                                                <div class="img-mask pixels-cover">
+                                                    <a class="slide-link" data-type="page-transition" href="project-1.html"></a>
+                                                    <div class="section-image trigger-item-link">
+                                                        <img src="images/project 1 Bg.webp" class="item-image grid__item-img" alt="">
+                                                    </div>                                                
+                                                    <img src="images/Project 1.webp" class="grid__item-img grid__item-img--large" alt="">
+                                                    <div class="section-thumb">
+                                                        <img src="images/Project 1.webp" alt="">
+                                                    </div>                              
                                                 </div>
-
-                                            </form>                        
-                                                                    
-                                        </div>
-                                        
-                                    </div> 
-                                    
-                                    
-                                    
-                                    <div class="content-row dark-section text-align-center" data-bgcolor="#F2F2F2">
-                                    
-                                        <div class="one_third has-animation" data-delay="100">
-                                            
-                                            <div class="box-icon-wrapper block-boxes">
-                                                <div class="box-icon">
-                                                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="box-icon-content">
-                                                    <h6 class="no-margins">Negombo, Sri Lanka</h6>
-                                                    <p>Address</p>
-                                                </div>
-                                            </div> 
-                                                                   
-                                        </div>
-                                        
-                                        <div class="one_third has-animation"  data-delay="200">
-                                            
-                                            <hr><p class="bigger">. . .</p>
-                                                                    
-                                        </div>
-                                        
-                                        <div class=" one_third last has-animation"  data-delay="300">
-                                            
-                                            <div class="box-icon-wrapper block-boxes">
-                                                <div class="box-icon">
-                                                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="box-icon-content">
-                                                    <h6 class="no-margins">+94 (776) 574-8901</h6>
-                                                    <p>Phone</p>
+                                                <div class="slide-caption trigger-item-link-secondary">
+                                                    <div class="slide-title"><span>Memoir</span></div>                                                    
+                                                    <div class="slide-date"><span>2025</span></div>
+                                                    <div class="slide-cat"><span>Blog Template.</span></div>                                             
                                                 </div>
                                             </div>
-                                            
-                                        </div> 
-                                                               
-                                    </div> 
-                                   
-                                   
-                                    
-                                    <div class="content-row full row_padding_top row_padding_bottom dark-section text-align-center" data-bgcolor="#F2F2F2">
+                                        </div>
                                         
-                                        <p class="bigger has-shuffle no-margins secondary-font">Ready to work together?</p>
-                                         <!--'TODO: Add the email'-->
-                                        <div id="copy-email" data-hover-message="Copy Mail" data-clicked-message="Copied"><span>office@bennet.com</span></div>
+                                        <div class="Apex-item design-filter">
+                                            <div class="slide-inner trigger-item change-header" data-centerLine="OPEN">                                                    
+                                                <div class="img-mask pixels-cover">
+                                                    <a class="slide-link" data-type="page-transition" href="project-2.html"></a>
+                                                    <div class="section-image  trigger-item-link">
+                                                        <img src="images/project  2 Bg.webp" class="item-image grid__item-img" alt="">
+                                                    </div>                                                
+                                                    <img src="images/project 2.webp" class="grid__item-img grid__item-img--large" alt="">   
+                                                    <div class="section-thumb">
+                                                        <img src="images/project 2.webp" alt="">
+                                                    </div>                           
+                                                </div>
+                                                <div class="slide-caption trigger-item-link-secondary">
+                                                    <div class="slide-title"><span>GARM</span></div>
+                                                    <div class="slide-date"><span>2025</span></div>
+                                                    <div class="slide-cat"><span>Style-Focused.</span></div>                                          
+                                                </div>
+                                            </div>
+                                        </div>
                                         
-                                    </div> 
-                            
-                            
-                        		</div>                                                           
+                                        <div class="Apex-item photo-filter">                                                
+                                            <div class="slide-inner trigger-item change-header" data-centerLine="OPEN">                                                    
+                                                <div class="img-mask pixels-cover">
+                                                    <a class="slide-link" data-type="page-transition" href="project-3.html"></a>
+                                                    <div class="section-image trigger-item-link">
+                                                        <img src="images/project  3 Bg.webp" class="item-image grid__item-img" alt="">
+                                                    </div>                                                
+                                                    <img src="images/project 3.webp" class="grid__item-img grid__item-img--large" alt="">
+                                                    <div class="section-thumb">
+                                                        <img src="images/project 3.webp" alt="">
+                                                    </div>                              
+                                                </div>
+                                                <div class="slide-caption trigger-item-link-secondary">
+                                                    <div class="slide-title"><span>Velaa</span></div>
+                                                    <div class="slide-date"><span>2025</span></div>
+                                                    <div class="slide-cat"><span>clothing brands.</span></div>                                             
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="Apex-item design-filter">
+                                            <div class="slide-inner align-top trigger-item change-header" data-centerLine="OPEN">
+                                                <div class="img-mask pixels-cover">
+                                                    <a class="slide-link" data-type="page-transition" href="project-4.html"></a>
+                                                    <div class="section-image trigger-item-link">
+                                                        <img src="images/project  4 Bg.webp" class="item-image grid__item-img" alt="">                                                            
+                                                    </div>                                                
+                                                    <img src="images/Project 4.webp" class="grid__item-img grid__item-img--large" alt="">
+                                                    <div class="section-thumb">
+                                                        <img src="images/project 4.webp" alt="">
+                                                    </div>                               
+                                                </div>
+                                                <div class="slide-caption trigger-item-link-secondary">
+                                                    <div class="slide-title"><span>Sonic</span></div>
+                                                    <div class="slide-date"><span>2025</span></div>
+                                                    <div class="slide-cat"><span>e-commerce.</span></div>                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                   
+                                                                                
+                                    </div>
+                                                                
+                        		</div>  
+
                             </div>    
 
                         </div>
+                        
+                           
+                    	<!-- Page Navigation --> 
+                        <div id="page-nav" class="move-nav-onload">
+                            <div class="page-nav-wrap">
+                                <div class="page-nav-caption nav-full-caption content-full-width text-align-center">                                 
+                                    <div class="inner">
+                                        <a class="next-ajax-link-page" data-type="page-transition" data-centerline="GO TO" href="Studio.html">
+                                            <div class="next-hero-title caption-timeline" data-infoTextBefore="Go Ahead" data-infoTextAfter="Next Page"><span>Studio</span></div>
+                                        </a>                                   
+                                    </div>               
+                                </div>
+                            </div>
+                        </div>      
                         
                                 
                     </div>
                 
                 </div>
-                
                 
                 
                 
@@ -402,18 +413,15 @@
                             </div>
 
                         </footer>
-                <!--/Footer -->
             
         
         	</div>
-            <!--/Content Scroll -->
             
             
             <div id="app"></div>
             
             
-		</div>    
-        <!--/Page Content -->
+		</div>      
     
 		</div>
 	</main>
@@ -443,7 +451,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js'></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
     
     <script src="js/Apex.js"></script>
 	<script src="js/plugins.js"></script>

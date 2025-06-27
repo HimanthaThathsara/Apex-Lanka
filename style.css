@@ -2551,6 +2551,7 @@
 		transform-origin: 25px center;
 		display: block;
 		position:absolute;
+		border-radius: 50%; 
 		left:0;
 		top:0;
 		width: 40px;
@@ -2568,6 +2569,9 @@
 		transform: scale(1);
 		-webkit-transform: scale(1);
 		opacity:1;
+		background-color: #fff;
+		border-radius: 50%;
+		box-shadow: inset 0 0 15px rgba(0,0,0,0.3);
 	}
 	
 	.button-icon-link .icon-wrap {
@@ -2593,7 +2597,7 @@
 	}
 	
 	.light-content .button-icon-link .button-icon {
-  		color: #000;
+  		color: #fff;
 	}
 	
 	.button-icon-link .button-icon i {

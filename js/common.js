@@ -871,23 +871,23 @@ jQuery(function ($) {
 					duration: 0.3,
 					borderWidth: '2px',
 					scale: 1.4,
-					borderColor: "#000",
-					backgroundColor: "transparent"
+					borderColor: "#f2f2f2",
+					backgroundColor: "#f2f2f2"
 				});
 				gsap.to('#ball-loader', {
 					duration: 0.2,
 					borderWidth: '2px',
-					borderColor: "#000",
+					borderColor: "#f2f2f2",
 					top: 2,
 					left: 2
 				});
 
-				$("#ball").append('<img class="eyes-icon" src="images/eyes.png" style="transform:scale(0.75);">');
+				$("#ball").append('<img class="eyes-icon" src="images/hand 1.png" style="transform:scale(0.75);">');
 
 				let imageIndex = 0;
 				const images = [
-					'<img class="eyes-icon" src="images/eyes1.png" style="transform:scale(0.75);">',
-					'<img class="eyes-icon" src="images/eyes.png" style="transform:scale(0.75);">'
+					'<img class="eyes-icon" src="images/hand 1.png" style="transform:scale(0.75);">',
+					'<img class="eyes-icon" src="images/hand 1.png" style="transform:scale(0.75);">'
 				];
 
 				function switchImage() {
