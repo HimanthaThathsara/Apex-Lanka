@@ -26,7 +26,6 @@
 ##  Table of Contents
 
 - [ Overview](#-overview)
-- [ Features](#-features)
 - [ Project Structure](#-project-structure)
 - [ Getting Started](#-getting-started)  
   - [ Installation](#-installation)
@@ -37,13 +36,7 @@
 
 ##  Overview
 
-<code>❯ REPLACE-ME</code>
-
----
-
-##  Features
-
-<code>❯ REPLACE-ME</code>
+<code>We are a agency. Also we built website for our customers and manage their servers and maintaining the servers.</code>
 
 ---
 
